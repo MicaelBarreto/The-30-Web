@@ -60,7 +60,7 @@
             "php artisan clear-compiled",
             "php artisan optimize",
             "chmod -R 777 public/",
-            "chmod -R 777 app/storage" 
+            "chmod -R 777 app/" 
         ]
     }
 }
