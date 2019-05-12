@@ -21,7 +21,8 @@ class Weapon extends Model
 		'damage',
         'fire_rate',
         'critical_chance',
-        'type_id'
+        'type_id',
+		'image'
     ];
     
     public function character()
