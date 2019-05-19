@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-import ReactDOM from 'react-dom'
+import { Button, Form, Container } from "react-bootstrap";
+import ReactDOM from 'react-dom';
+import '../../../public/css/custom.css';
 
 class Login extends Component {
   constructor(props) {
@@ -10,53 +11,56 @@ class Login extends Component {
       user: "",
       password: ""
     };
+
   }
 
-  validateForm() {
-    return this.state.user.length > 0 && this.state.password.length > 0;
+  userChange = (event) => {
+    this.setState({ user: event.target.value });
   }
 
-  handleChange(event){
-    this.setState({
-      [event.target.id]: event.target.value
-    });
-  }
-
-  handleSubmit(event){
-    event.preventDefault();
+  passChange = (event) => {
+    this.setState({ password: event.target.value });
   }
 
   render() {
     return (
-      <div className="Login">
-        <form onSubmit={this.handleSubmit}>
-          <FormGroup controlId="user" bsSize="large">
-            <FormLabel>user</FormLabel>
-            <FormControl
-              autoFocus
-              type="user"
-              value={this.state.user}
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
-            <FormLabel>Password</FormLabel>
-            <FormControl
-              value={this.state.password}
-              onChange={this.handleChange}
-              type="password"
-            />
-          </FormGroup>
-          <Button
-            block
-            bsSize="large"
-            disabled={!this.validateForm()}
-            type="submit"
-          >
-            Login
-          </Button>
-        </form>
-      </div>
+      <Container>
+          <div className="Login">
+            <div className="fallout-logo-background">
+              <h1 className="fallout-logo-words">The 30's</h1>
+            </div>
+            <form onSubmit="/login">
+              <Form.Group controlId="user">
+                <Form.Label className="fallout-label">User</Form.Label>
+                <Form.Control 
+                  type="text" 
+                  placeholder="User"
+                  value={this.state.user}
+                  onChange={this.userChange}
+                  className="fallout-input"
+                />
+              </Form.Group>
+
+              <Form.Group controlId="password">
+                <Form.Label className="fallout-label">Password</Form.Label>
+                <Form.Control 
+                  type="password" 
+                  placeholder="Password"
+                  value={this.state.password}
+                  onChange={this.passChange}
+                  className="fallout-input"
+                />
+              </Form.Group>
+              <Button
+                block
+                type="submit"
+                className="fallout-button"
+              >
+                Login
+              </Button>
+            </form>
+          </div>
+      </Container>
     );
   }
 }

@@ -1,0 +1,29 @@
+.fallout-input{
+    color: rgb(26, 255, 0);
+    border-color: rgb(26, 255, 0);
+    border-width: 10%;
+    background-color: black;
+}
+
+.fallout-border{
+    border: 5px;
+    border-color: rgb(26, 255, 0);
+}
+
+.fallout-logo-background{
+    background-color: white;
+    text-align: center;
+}
+
+.fallout-logo-words{
+    color: black;
+}
+
+.fallout-label{
+    color: rgb(26, 255, 0);
+}
+
+.fallout-button{
+    background-color: rgb(26, 255, 0);
+    color: black;
+}

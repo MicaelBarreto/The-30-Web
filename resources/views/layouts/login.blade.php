@@ -6,13 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>React Test</title>
+        <title>The 30's</title>
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
-    <body>
-        <div id="app"></div>
-
+    <body  style="background-color:black;">
+        <div id="app"  class="fallout-background"></div>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
-    </html>
+        
