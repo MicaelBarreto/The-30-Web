@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('/layouts/login');
 });
+
+Auth::routes();
+
+Route::get('/dashboard', 'UserController@dashboard');
