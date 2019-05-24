@@ -13,3 +13,5 @@ require('./bootstrap');
  */
 
 require('./components/Login.js');
+
+require('./components/Dashboard.js');

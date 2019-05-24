@@ -11,7 +11,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body  style="background-color:black;">
-        <div id="app"></div>
+        <div id="dash"></div>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
         

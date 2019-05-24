@@ -27,3 +27,10 @@
     background-color: rgb(26, 255, 0);
     color: black;
 }
+
+.fallout-button2{
+    background-color: black;
+    color:  rgb(26, 255, 0);
+    border: 5px;
+    border-color: rgb(26, 255, 0);
+}
