@@ -34,3 +34,51 @@
     border: 5px;
     border-color: rgb(26, 255, 0);
 }
+
+.fallout-button2:hover{
+    background-color: black;
+    color:  rgb(26, 255, 0);
+    border: 5px;
+    border-color: rgb(26, 255, 0);
+    box-shadow: 0 0 5px rgb(26, 255, 0);
+}
+
+.fallout-button2:focus{
+    background-color: black;
+    color:  rgb(26, 255, 0);
+    border: 5px;
+    border-color: rgb(26, 255, 0);
+    box-shadow: 0 0 5px rgb(26, 255, 0) !important;
+}
+
+.fallout-button2:active{
+    background-color: black;
+    color:  rgb(26, 255, 0);
+    border: 5px;
+    border-color: rgb(26, 255, 0);
+    box-shadow: 0 0 5px rgb(26, 255, 0) !important;
+}
+
+.fallout-button2:not(:disabled):not(.disabled):active{
+    background-color: black;
+    color:  rgb(26, 255, 0);
+    border: 5px;
+    border-color: rgb(26, 255, 0);
+    box-shadow: 0 0 5px rgb(26, 255, 0);
+}
+
+.fallout-button2:not(:disabled):not(.disabled):focus{
+    background-color: black;
+    color:  rgb(26, 255, 0);
+    border: 5px;
+    border-color: rgb(26, 255, 0);
+    box-shadow: 0 0 5px rgb(26, 255, 0);
+}
+
+.fallout-middle-container{
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    height:100%;
+    align-items: center;
+}

@@ -65,4 +65,6 @@ class Login extends Component {
   }
 }
 
-ReactDOM.render(<Login />, document.getElementById('app'))
+if(document.getElementById('app')){
+  ReactDOM.render(<Login />, document.getElementById('app'))
+}

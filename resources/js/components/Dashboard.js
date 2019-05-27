@@ -1,26 +1,16 @@
 import React, { Component } from 'react';
 import { ButtonToolbar, Container, Col, DropdownButton, Dropdown, Button } from 'react-bootstrap';
-import ReactDOM from 'react-dom';
 import '../../../public/css/custom.css';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import Hearder from './partials/Header.js';
 
 
-class Dashboard extends Component {
+export default class Dashboard extends Component {
     render() {
         return(
             <Container>
-                <Container>
-                    <Col md={3}>
-                        <h1 className="fallout-logo-words">The 30's</h1>
-                    </Col>
-                    <Col md={{ span: 2, offset: 10 }}>
-                        <DropdownButton title="User">
-                            <Dropdown.Item href="#">Settings</Dropdown.Item>
-                            <Dropdown.Divider />
-                            <Dropdown.Item href="#">Exit</Dropdown.Item>
-                        </DropdownButton>
-                    </Col>
-                </Container>
-                <Container>
+                <Header />
+                <Container className="fallout-middle-container">
                     <ButtonToolbar>
                         <Button
                             href="/enter"
@@ -39,5 +29,3 @@ class Dashboard extends Component {
     }
         
 }
-
-ReactDOM.render(<Dashboard />, document.getElementById('dash'))
